@@ -389,7 +389,7 @@ static int btusb_probe(struct usb_interface *p_interface, const struct usb_devic
     int retval = -ENOMEM;
 
     GKI_init();
-
+    printk("===bcm bt drivers for bcm242&bcm20705 ===\r\n");
     BTUSB_INFO("p_interface=%p, p_id=%p\n", p_interface, p_id);
     BTUSB_INFO("p_interface->cur_altsetting->desc.bInterfaceNumber=%d\n", p_interface->cur_altsetting->desc.bInterfaceNumber);
     BTUSB_DBG("match=0x%x VID=0x%x PID=0x%x class=0x%x subclass=0x%x protocol=0x%x\n",

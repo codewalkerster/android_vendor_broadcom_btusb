@@ -1,0 +1,2 @@
+/mnt/nfsroot/weiguang.ruan/m8b/vendor/broadcom/btusb/bcm569/btusb_comp.ko
+/mnt/nfsroot/weiguang.ruan/m8b/vendor/broadcom/btusb/bcm569/src/btusb.o /mnt/nfsroot/weiguang.ruan/m8b/vendor/broadcom/btusb/bcm569/src/btusb_dev.o /mnt/nfsroot/weiguang.ruan/m8b/vendor/broadcom/btusb/bcm569/src/btusb_isoc.o /mnt/nfsroot/weiguang.ruan/m8b/vendor/broadcom/btusb/bcm569/src/gki/gki_buffer.o /mnt/nfsroot/weiguang.ruan/m8b/vendor/broadcom/btusb/bcm569/src/gki/gki_klinux.o

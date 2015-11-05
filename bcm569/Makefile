@@ -1,3 +1,4 @@
+export SUBDIRS ?= $(src)
 
 # Specify Include folders
 EXTRA_CFLAGS += -I$(SUBDIRS)
@@ -34,13 +35,7 @@ EXTRA_CFLAGS += -DEXPORT_SYMTAB
 usbobjs := \
         src/btusb.o \
         src/btusb_dev.o \
-        src/btusb_isoc.o \
-        src/btusb_version.o
-
-ifeq ($(CONFIG_PROC_FS),y)
-usbobjs += \
-        src/btusb_proc.o
-endif
+        src/btusb_isoc.o
 
 ifeq ($(strip $(LITE)),TRUE)
 liteobjs := src/btusb_lite.o \
@@ -54,13 +49,15 @@ gkiobjs := \
         src/gki/gki_buffer.o \
         src/gki/gki_klinux.o
 
-obj-m += btusb.o
-btusb-objs := $(usbobjs) $(gkiobjs) $(liteobjs)
+obj-m += btusb_comp.o
+btusb_comp-objs := $(usbobjs) $(gkiobjs) $(liteobjs)
 
-# specify Kernel build location (can be overriden at command line)
-#KDIR ?= /lib/modules/$(shell uname -r)/build
-KDIR  ?= /host/android/tiny4412/tiny_4412/linux-3.5
-PWD := $(shell pwd)
+# specify Kernel build location
+KDIR    := /mnt/nfsroot/weiguang.ruan/m8b_2/out/target/product/n300/obj/KERNEL_OBJ
+#KDIR    := /home/kausik/Stuff/work/workspace/j_for_g/kernel_dev/manta_kernel/exynos_1/linux/
+#KDIR    := /home/kausik/Stuff/work/workspace/j_for_g/kernel_dev/tuna_kernel_4.3/linux
+
+PWD     := $(shell pwd)
 
 default:
 ifeq ($(strip $(LITE)),TRUE)
@@ -72,9 +69,6 @@ endif
 endif
 	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) modules
 
-install:
-	cp -v btusb.ko /lib/modules/$(uname -r)/kernel/drivers/brcm/btusb.ko
-
 clean:
 	rm -rf *.o *~ core .depend .*.cmd *.ko *.mod.c .tmp_versions
 	rm -f Module.markers
@@ -85,44 +79,11 @@ clean:
 	rm -f ./src/gki/*.o
 	rm -f ./src/gki/.*.o.cmd
 
-# define the location of the Linux stable repository
-PROJECTS_DIR ?= ~/projects
-LINUX_STABLE = $(PROJECTS_DIR)/linux-stable
-
-# rule to run a regression on a specific file
-v2.% v3.%:
-	@echo Running regression on: $@
-	# clean the previous version before switching version
-	cd $(LINUX_STABLE); make mrproper >/dev/null
-	# switch version
-	cd $(LINUX_STABLE); git checkout $@ >/dev/null
-	# prepare to build modules
-	cd $(LINUX_STABLE); make defconfig >/dev/null
-	cd $(LINUX_STABLE); make modules_prepare >/dev/null
-	make KDIR=$(LINUX_STABLE)
-
-regression-install:
-	cd $(PROJECTS_DIR)
-	git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
-
-regression-update:
-	cd $(LINUX_STABLE)
-	git pull
-
-regression: v2.6.28 v2.6.35 v2.6.36 v3.2.1 v3.12.1
-	@echo Regression completed successfully!
-
-.PHONY: help regression regression-update regression-install clean install
-
 help:
 	@echo "BTUSB module configurations and targets:"
 	@echo "  LITE=FALSE         : No StackLite (Default)"
 	@echo "  LITE=TRUE          : StackLite compiled"
 	@echo "  SEC=FALSE          : No SEC Encoder Support(default)"
 	@echo "  SEC=TRUE           : SEC Encoder Support. Requires StackLite"
-	@echo "  clean              : remove the build output files"
-	@echo "  install            : copy the driver in the current platform modules list"
-	@echo "  regression         : run a regression on several Linux versions"
-
-
-
+	@echo "  clean"
+	
