@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/src
+END
+btusb_lite_avdt.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/src/btusb_lite_avdt.c
+END
+btusb_isoc.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/src/btusb_isoc.c
+END
+btusb_lite.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/src/btusb_lite.c
+END
+btusb_lite_l2c.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/src/btusb_lite_l2c.c
+END
+btusb_dev.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/src/btusb_dev.c
+END
+btusb.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/src/btusb.c
+END
+btusb_lite_hci.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/src/btusb_lite_hci.c
+END
+btusb_lite_av.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/src/btusb_lite_av.c
+END

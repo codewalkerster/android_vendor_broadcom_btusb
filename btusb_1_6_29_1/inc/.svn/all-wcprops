@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/inc
+END
+btusb.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/inc/btusb.h
+END
+btusb_lite_hci.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/inc/btusb_lite_hci.h
+END
+btusbext.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/inc/btusbext.h
+END
+btusb_lite_av.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/inc/btusb_lite_av.h
+END
+gki_int.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/inc/gki_int.h
+END
+hcidefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/inc/hcidefs.h
+END
+target.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/inc/target.h
+END
+bt_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/inc/bt_types.h
+END
+btusb_lite_avdt.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/inc/btusb_lite_avdt.h
+END
+gki.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/inc/gki.h
+END
+bt_target.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/inc/bt_target.h
+END
+btusb_lite.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/inc/btusb_lite.h
+END
+btusb_lite_l2c.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/inc/btusb_lite_l2c.h
+END
+data_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/inc/data_types.h
+END

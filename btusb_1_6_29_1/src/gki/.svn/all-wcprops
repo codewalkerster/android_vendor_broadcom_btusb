@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/src/gki
+END
+gki_buffer.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/src/gki/gki_buffer.c
+END
+gki_klinux.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/SiP/!svn/ver/725/Broadcom/Android/Trunk/BT/BTUSB/btusb_1_6_29_1/src/gki/gki_klinux.c
+END
